@@ -32,7 +32,7 @@ _All icons are from: https://icons8.com_
 _Audio: https://www.youtube.com/watch?v=sMHrq9NavWI_
 
 
-#### Phase 4: Task 2
+#### Unique features of the project
 - **Robust Code:** Due to the console based implementation of the program, it was possible for the user to type the wrong word due to which the KeyError was added to _Goals_ class.
 This is also important as this is also the key to retrieve the trackers which have been selected from the map. Due to this setting the key which is inputted is important and so the `addGoal()`method throws the KeyError.
 - **Type Hierarchy:** The abstract class _Trackers_ was created to create different types of trackers with their own functionality without duplication of code. Due to this, most trackers inherit the methods for updating and adding a target to each tracker.
@@ -40,7 +40,7 @@ However, some methods were overridden in MoodTracker and SleepTracker.
 - **Map interface:** It is used in _Goals_ to easily retrieve a tracker, regardless of when it was added.
 - **Bi-Directional Association:** This is used in _DisplayPanel_ and _MenuPanel_. This because the menu panel makes the changes which the display panel is responsible for displaying.
 
-#### Phase 4: Task 3
+#### Further Improvements to be made
 One aspect of the design of the code that I would like to improve is the hierarchy for the trackers. This would have been better implemented if trackers was an interface with two abstract classes which implemented it instead. 
 This would split the current trackers which I have into two parts, namely ones which have targets and progress and others which simply display the information which the user has entered. 
 The _MoodTracker_ is one such example which really doesn't need a target and progress but rather is just a reflection of the mood that the user had on the day. 
